@@ -2,10 +2,25 @@ p,
 span,
 h1,
 h2,
-h3
-{
+h3,
+h4,
+ul,
+li {
   margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
+
+/* body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+} */
 
 .page {
   border: 1px solid black;
@@ -48,7 +63,7 @@ h3
   top: 30px;
   left: 64px;
   background-image: url(../images/logo_place_header.svg);
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__title {
@@ -58,7 +73,7 @@ h3
   align-items: center;
   align-self: center;
   margin-left: 64px;
-  z-index: 1;
+  z-index: 2;
   font-size: 102px;
   line-height: 96px;
   font-weight: 600;
@@ -70,10 +85,15 @@ h3
   position: absolute;
   left: 64px;
   bottom: 30px;
-  z-index: 1;
+  z-index: 2;
   font-size: 18px;
   line-height: 25px;
 }
+
+/* img {
+  max-width: 100%;
+  display: block;
+} */
 
 .header__link {
   text-decoration: none;
@@ -85,15 +105,10 @@ h3
   width: 765px;
   height: 608px;
   position: absolute;
+  z-index: 1;
   bottom: 0px;
   right: 0px;
-}
-
-.header__main-illustration_image {
-  /*border: 1px solid red;*/
-  width: 100%;
-  height: 100%;
-  background-size: cover;
+  object-fit: cover;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -104,8 +119,10 @@ h3
   background-color: #2f80ed;
   top: 64px;
   right: 0px;
-  z-index: -1;
+  z-index: 0;
 }
+
+
 
 .description {
   display: flex;
@@ -113,7 +130,7 @@ h3
 }
 
 .two-columns {
-  /*border: 1px solid blue;*/
+  border: 1px solid blue;
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -134,25 +151,20 @@ h3
   /*border: 1px solid blue;*/
   width: 80%;
   min-width: 784px;
-}
-
-.two-columns__paragraph {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
   line-height: 34px;
   font-size: 24px;
 }
 
-.two-columns__paragraph_position_top {
-  /*border: 1px solid blue;*/
-  margin: 0px;
+.two-columns__paragraph {
+  display: inline-block;
+  border: 1px solid blue;
 }
 
-.two-columns__paragraph_position_center {
-  /* border: 1px solid blue; */
+.two-columns__main-text :nth-child(even) {
   margin: 30px 0px;
-  display: inline-block;
 }
 
 .two-columns__span-accent {
@@ -160,20 +172,15 @@ h3
   font-weight: bold;
 }
 
-.two-columns__paragraph_position_bottom {
-  /* border: 1px solid blue; */
-  margin: 0px;
-}
-
 .digits {
-  /*border: 1px solid red;*/
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .section-titl {
-  /*border: 1px solid red;*/
+  border: 1px solid red;
   width: 60%;
   text-align: center;
   margin: 0 auto;
@@ -183,7 +190,7 @@ h3
 }
 
 .section-subtitle {
-  /*border: 1px solid red;*/
+  border: 1px solid red;
   width: 60%;
   text-align: center;
   margin: 20px auto 0 auto;
@@ -193,7 +200,7 @@ h3
 }
 
 .table {
-  /*border: 1px solid red;*/
+  border: 1px solid red;
   width: 1100px;
   display: flex;
   flex-direction: row;
@@ -202,53 +209,66 @@ h3
 }
 
 .table__cell {
-  /*border: 1px solid red;*/
+  border: 1px solid red;
   width: 250px;
   margin-top: 60px;
 }
 
 .table__heading {
+  border: 1px solid red;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
+  /* margin: 0px; */
 }
 
 .table__text {
+  border: 1px solid red;
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
 }
 
 .feynman {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
+  height: 890px;
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .feynman__title {
-  position: absolute;
-  /* border: 1px solid blue; */
+  /* position: absolute; */
+  border: 1px solid blue;
   width: 648px;
-  left: calc(50% - 324px);
-  z-index: 2;
-}
 
-.feynman__title_text {
+  /* left: calc(50% - 324px); */
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
   z-index: 2;
+  margin-bottom: 70px;
 }
 
+/* .feynman__title_text {
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  z-index: 2;
+} */
+
 .feynman__subtitle {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   justify-content: center;
   display: inline-block;
-  position: absolute;
+  /* position: absolute;
   top: calc(276px + 70px);
-  left: calc(50% - 446px / 2);
+  left: calc(50% - 446px / 2); */
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -256,10 +276,13 @@ h3
 }
 
 .feinman__illustration {
-  /*border: 1px solid red;*/
+  border: 1px solid red;
   width: 867px;
   height: 637px;
-  margin: 156px auto 0px 0px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  /* margin: auto auto 0px 0px; */
 }
 
 .feinman__link {
@@ -268,9 +291,6 @@ h3
   position: absolute;
   right: 48px;
   top: 50%;
-}
-
-.feinman__link_text {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -278,14 +298,22 @@ h3
   text-decoration: none;
 }
 
+/* .feinman__link_text {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+} */
+
 .kaufman {
   /*border: 1px solid red;*/
   display: flex;
-  position: relative;
   flex-direction: column;
   align-items: center;
   background-color: #000000;
   overflow: hidden;
+  position: relative;
 }
 
 .kaufman__traingle {
@@ -297,23 +325,25 @@ h3
   z-index: 0;
 }
 
-.kaufman__traingle_image {
+/* .kaufman__traingle_image {
   width: 100%;
   height: 100%;
-}
+} */
 
-.section-titl__theme_dark {
+.section-titl_theme_dark {
+  border: 1px solid red;
   color: #ffffff;
   margin-top: 90px;
   z-index: 1;
 }
 
-.section-subtitle__theme_dark {
+.section-subtitle_theme_dark {
+  border: 1px solid red;
   color: #ffffff;
   z-index: 1;
 }
 
-.table__theme_dark {
+.table_theme_dark {
   margin-bottom: 90px;
 }
 
@@ -327,26 +357,30 @@ h3
 }
 
 .footer {
+  border: 1px solid red;
   min-height: 350px;
   background-color: #000000;
-  border: 1px solid #000000;
+  display: flex;
+  flex-shrink: 0;
+  /* border: 1px solid #000000; */
 }
 
-.columns {
-  /*border: 1px solid red;*/
+.footer__columns {
+  border: 1px solid red;
   margin: 60px auto 40px;
-  min-height: 250px;
+  /* min-height: 250px; */
   width: 90%;
   display: flex;
   justify-content: space-between;
   color: white;
 }
 
-.column_content_copyright {
-  /*border: 1px solid red;*/
+.footer__column_content_copyright {
+  border: 1px solid red;
   flex-basis: 711px;
   display: flex;
-  position: relative;
+  flex-direction: column;
+  /* position: relative; */
   justify-content: space-between;
   /* align-self: center; */
 }
@@ -355,45 +389,59 @@ h3
   background-image: url(../images/logo_place_footer.svg);
 }
 
-.autor {
-  /*border: 1px solid red;*/
-  position: absolute;
-  bottom: 18px;
+.footer__autor {
+  border: 1px solid red;
+  /* position: absolute;
+  bottom: 18px; */
+  align-self: flex-start;
+  margin-bottom: 18px;
   line-height: 25px;
   font-size: 18px;
 }
 
-.column_content_info {
-  /*border: 1px solid red;*/
-  display: inline-block;
+.footer__column_content_info {
+  border: 1px solid red;
+
+  /* display: inline-block; */
 }
 
-.column-heading {
-  /*border: 1px solid red;*/
+.footer__column-heading {
+  border: 1px solid red;
   margin-bottom: 20px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
 }
 
-.column-links {
-  /*border: 1px solid red;*/
+.footer__column-links {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__row-links{
+  border: 1px solid red;
   text-decoration: none;
   line-height: 30px;
   font-size: 18px;
   color: white;
 }
 
-.column_content_social {
-  /*border: 1px solid red;*/
+.footer__column_content_social {
+  border: 1px solid red;
 }
 
-.column-links__icon {
+.footer__social-links {
+  border: 1px solid red;
   display: flex;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  color: white;
 }
 
-.icon {
-  /*border: 1px solid red;*/
+.footer__social-icon {
+  border: 1px solid red;
   display: inline-block;
   align-items: center;
 }
