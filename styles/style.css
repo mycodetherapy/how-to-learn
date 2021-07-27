@@ -148,7 +148,7 @@
   align-items: center;
 }
 
-.section-titl {
+.section-title {
   /* border: 1px solid red; */
   width: 60%;
   text-align: center;
@@ -204,7 +204,7 @@
 
 .feynman {
   /* border: 1px solid blue; */
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -235,13 +235,15 @@
   z-index: 2;
 }
 
-.feinman__illustration {
-  /* border: 1px solid red; */
+.feynman:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 867px;
   height: 637px;
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
+  background-image: url(../images/feynman.png);
+  background-size: cover;
 }
 
 .feinman__link {
@@ -276,7 +278,7 @@
   z-index: 0;
 }
 
-.section-titl_theme_dark {
+.section-title_theme_dark {
   /* border: 1px solid red; */
   color: #ffffff;
   margin-top: 90px;
@@ -359,7 +361,7 @@
   flex-direction: column;
 }
 
-.footer__row-links{
+.footer__column-link {
   /* border: 1px solid red; */
   text-decoration: none;
   line-height: 30px;
@@ -371,20 +373,10 @@
   border: 1px solid red;
 } */
 
-.footer__social-links {
-  /* border: 1px solid red; */
-  display: flex;
-  text-decoration: none;
-  line-height: 30px;
-  font-size: 18px;
-  color: white;
-}
-
 .footer__social-icon {
   /* border: 1px solid red; */
   width: 16px;
   height: 16px;
-  margin-right: 10px;
-  align-self: center;
+  margin: 0 10px 0 0;
   object-fit: cover;
 }
