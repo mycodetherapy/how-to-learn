@@ -23,6 +23,7 @@
   max-height: 756px;
   background-color: #f2f2f2;
   z-index: 0;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 
@@ -94,6 +95,7 @@
   right: 0px;
   z-index: 0;
 }
+
 
 .description {
   display: flex;
@@ -380,3 +382,4 @@
   margin: 0 10px 0 0;
   object-fit: cover;
 }
+

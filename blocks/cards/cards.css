@@ -1,0 +1,17 @@
+.cards {
+  border: 1px solid red;
+  width: 920px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 0;
+
+  margin: 0 auto;
+}
+
+ cards :last-child {
+  margin-right: 0;
+ }
