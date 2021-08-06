@@ -10,9 +10,9 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-.offset {
+/* .offset {
   margin-bottom: 100px;
-}
+} */
 
 .header {
   /*border: 1px solid red;*/
@@ -103,14 +103,15 @@
 }
 
 .two-columns {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   width: 80%;
   display: flex;
   justify-content: space-between;
+  /* margin-top: 100px; */
 }
 
 .two-columns__breif {
-  /*border: 1px solid blue;*/
+  border: 1px solid blue;
   margin: 0;
   width: 175px;
   line-height: 1.2;
@@ -144,24 +145,24 @@
 }
 
 .digits {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .section-title {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   width: 60%;
   text-align: center;
-  margin: 0 auto;
+  margin: 100px auto 0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
 }
 
 .section-subtitle {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   width: 60%;
   text-align: center;
   margin: 20px auto 0 auto;
@@ -262,7 +263,7 @@
 }
 
 .kaufman {
-  /*border: 1px solid red;*/
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
