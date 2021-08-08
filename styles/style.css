@@ -39,7 +39,7 @@
   position: absolute;
   top: 30px;
   left: 64px;
-  background-image: url(../images/logo_place_header.svg);
+  background-image: url(../images/logo/logo_place_header.svg);
   z-index: 2;
 }
 
@@ -72,6 +72,12 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  opacity: 1;
+}
+
+.header__link:hover{
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 .header__main-illustration {
@@ -96,18 +102,25 @@
   z-index: 0;
 }
 
-
 .description {
   display: flex;
   justify-content: center;
 }
+
+/* .description :first-child {
+  margin-top: 100px;
+} */
 
 .two-columns {
   border: 1px solid blue;
   width: 80%;
   display: flex;
   justify-content: space-between;
-  /* margin-top: 100px; */
+  margin: 100px 0 0;
+}
+
+.two-columns_oakley {
+  margin-top: 160px;
 }
 
 .two-columns__breif {
@@ -174,7 +187,7 @@
 .table {
   /* border: 1px solid red; */
   padding: 0;
-  margin: 0;
+  margin: 0 0 100px;
   list-style: none;
   width: 1100px;
   display: flex;
@@ -260,6 +273,12 @@
   font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
+  opacity: 1;
+}
+
+.feinman__link:hover {
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 .kaufman {
@@ -334,7 +353,7 @@
 }
 
 .logo_place_footer {
-  background-image: url(../images/logo_place_footer.svg);
+  background-image: url(../images/logo/logo_place_footer.svg);
 }
 
 .footer__autor {
@@ -370,11 +389,13 @@
   line-height: 30px;
   font-size: 18px;
   color: white;
+  opacity: 1;
 }
 
-/* .footer__column_content_social {
-  border: 1px solid red;
-} */
+.footer__column-link:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
 
 .footer__social-icon {
   /* border: 1px solid red; */

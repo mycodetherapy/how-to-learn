@@ -2,11 +2,24 @@
   border: 1px solid red;
   display: flex;
   justify-content: center;
-  margin: 50px auto -60px;
-  flex-grow: 0;
-
+  margin: 50px auto 0;
+  position: relative;
+  width: 1050px;
+  height: 256px;
 }
 
 .video__iframes :first-child {
-  margin-right: 20px;
+  width: 515px;
+  height:  316px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.video__iframes :last-child {
+  width: 515px;
+  height:  316px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }

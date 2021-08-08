@@ -1,0 +1,11 @@
+.two-columns {
+  border: 1px solid blue;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0 0;
+}
+
+.two-columns_oakley {
+  margin-top: 160px;
+}
