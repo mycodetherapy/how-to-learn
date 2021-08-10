@@ -14,6 +14,7 @@
   position: absolute;
   right: 0px;
   top: 0px;
+  border-style: none;
 }
 
 .video__iframes :last-child {
@@ -22,4 +23,5 @@
   position: absolute;
   left: 0px;
   top: 0px;
+  border-style: none;
 }
