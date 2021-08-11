@@ -1,27 +1,7 @@
 .video__iframes {
   /* border: 1px solid red; */
   display: flex;
-  justify-content: center;
-  margin: 50px auto 0;
-  position: relative;
+  justify-content: space-between;
+  margin: 50px auto -60px;
   width: 1050px;
-  height: 256px;
-}
-
-.video__iframes :first-child {
-  width: 515px;
-  height:  316px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  border-style: none;
-}
-
-.video__iframes :last-child {
-  width: 515px;
-  height:  316px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-style: none;
 }
