@@ -9,4 +9,8 @@
 * YouTube API
 * Animations & Transforms
 
+<<<<<<< HEAD
 Если вы хотите посмотреть страницу, достаточно [пройти по ссылке.](https://mycodetherapy.github.io/how-to-learn/index.html)
+=======
+Если вы хотите посмотреть страницу, достаточно [пройти по ссылке](https://mycodetherapy.github.io/how-to-learn/index.html)
+>>>>>>> 5eac1abbeca47919c8373d0b656685b9a9e222de
