@@ -1,4 +1,6 @@
-# How-To-Learn
+# Проект: How-To-Learn
+
+### Если вы хотите посмотреть страницу, достаточно [пройти по ссылке.](https://mycodetherapy.github.io/how-to-learn/index.html)
 
 Страница о современных техниках и методах эффективного обучения, которая содержит некоторые факты, полезные ссылки и видеоматериалы.
 
@@ -8,5 +10,3 @@
 * Flexbox
 * YouTube API
 * Animations & Transforms
-
-Если вы хотите посмотреть страницу, достаточно [пройти по ссылке.](https://mycodetherapy.github.io/how-to-learn/index.html)
