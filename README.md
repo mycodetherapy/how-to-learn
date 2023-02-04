@@ -1,12 +1,13 @@
-# Проект: How-To-Learn
+# Project: How-To-Learn
 
-### Если вы хотите посмотреть страницу, достаточно [пройти по ссылке.](https://mycodetherapy.github.io/how-to-learn/index.html)
+### If you want to see the page, just [follow the link.](https://mycodetherapy.github.io/how-to-learn/index.html)
 
-Страница о современных техниках и методах эффективного обучения, которая содержит некоторые факты, полезные ссылки и видеоматериалы.
+A page about modern techniques and methods of effective teaching, which contains some facts, useful links and videos.
 
-Это один из первых опытов по верстке. На нем отрабатывалась работа с HTML по методологии БЭМ, а также внесение интерактивности на страницу при помощи CSS.
+This is one of the first layout experiments. It worked out working with HTML according to the BEM methodology, as well as introducing interactivity to the page using CSS.
 
-Используются технологии:
-* Flexbox
-* YouTube API
-* Animations & Transforms
+The following technologies are used:
+
+- Flexbox
+- YouTube API
+- Animations & Transforms
